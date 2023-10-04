@@ -12,12 +12,12 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.mobile_dev_assignment1.databinding.FragmentSecondBinding;
 
+import org.w3c.dom.Text;
+
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
     TextView str_total;
-
-
 
     @Override
     public View onCreateView(
@@ -32,6 +32,9 @@ public class SecondFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        str_total = view.findViewById(R.id.str_total);
+        str_total.setText(getArguments().getString("amount"));
 
         //return to the main screen when user clicks the back button
         view.findViewById(R.id.btn_back).setOnClickListener(new View.OnClickListener() {

@@ -28,7 +28,7 @@
             android:id="@+id/calculate_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="88dp"
             android:backgroundTint="@color/calculateButton"
             android:fontFamily="sans-serif-black"
             android:text="@string/calculate"
@@ -43,56 +43,55 @@
 
         <EditText
             android:id="@+id/str_Principal"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="80dp"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/first_number"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/str_emiExplanation"
-            android:autofillHints="" />
+            app:layout_constraintTop_toBottomOf="@+id/str_emiExplanation" />
 
         <EditText
             android:id="@+id/str_Interest"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginTop="20dp"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/second_number"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/str_Principal"
-            android:autofillHints="" />
+            app:layout_constraintTop_toBottomOf="@+id/str_Principal" />
 
         <EditText
             android:id="@+id/str_Tenure"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginTop="20dp"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/amortization_period"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/str_Interest"
-            android:autofillHints="" />
+            app:layout_constraintTop_toBottomOf="@+id/str_Interest" />
 
         <TextView
             android:id="@+id/str_Frequency"
             android:layout_width="wrap_content"
             android:layout_height="26dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="64dp"
             android:fontFamily="sans-serif-black"
             android:text="@string/payment_frequency_monthly"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.546"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/str_Tenure" />
 
@@ -100,14 +99,15 @@
             android:id="@+id/str_totalAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/calculate_button" />
+            app:layout_constraintTop_toBottomOf="@+id/calculate_button"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

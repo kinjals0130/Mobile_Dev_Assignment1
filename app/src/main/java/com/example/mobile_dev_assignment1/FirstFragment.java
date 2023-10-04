@@ -1,6 +1,7 @@
 package com.example.mobile_dev_assignment1;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.mobile_dev_assignment1.databinding.FragmentFirstBinding;
 
@@ -58,14 +61,16 @@ public class FirstFragment extends Fragment {
         btn_calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String result = updateTotalAmount();
-                str_totalAmount.setText("Your total EMI is: $" + result + "/month");
+                Bundle b = new Bundle();
+                String str_total = updateTotalAmount();
+                b.putString("amount", str_total);
+                Navigation.findNavController(view).
+                        navigate(R.id.action_FirstFragment_to_SecondFragment, b);
             }
         });
 
     }
-
+    //function to calculate the monthly EMI using user input values
     public String updateTotalAmount(){
         //get the input from the user, cast it to double to do calculation
         double principal = Double.parseDouble(str_priAmount.getText().toString());

@@ -7,10 +7,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="emi_explanation">This app will assist in calculating your monthly EMI (Equated Monthly Installment.
-    The Mortgage Principle Amount is the purchase price minus down payment.
-    Interest rate is your fixed mortgage rate. The loan tenure in months is how many months it will take to repay the mortgage in full.
-    The EMI reduces based on the longer your loan tenure is. </string>
+    <string name="emi_explanation">This app will assist in calculating your monthly EMI (Equated Monthly Installment.</string>
 
     <string name="first_number">Principal Loan Amount ($)</string>
     <string name="second_number">Interest Rate (%)</string>
