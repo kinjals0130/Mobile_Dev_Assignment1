@@ -34,7 +34,7 @@ public class SecondFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         str_total = view.findViewById(R.id.str_total);
-        str_total.setText(getArguments().getString("amount"));
+        str_total.setText("$" + getArguments().getString("amount"));
 
         //return to the main screen when user clicks the back button
         view.findViewById(R.id.btn_back).setOnClickListener(new View.OnClickListener() {

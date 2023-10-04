@@ -17,4 +17,5 @@
     <string name="total_amount">0</string>
     <string name="total_emi">Your total EMI is:</string>
     <string name="back">Back</string>
+    <string name="dollarSign">$</string>
 </resources>
