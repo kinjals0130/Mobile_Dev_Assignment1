@@ -2,6 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="appBackground">#ADF3D2</color>
+    <color name="appBackground">#D4CBEA</color>
     <color name="calculateButton">#C2CACC</color>
 </resources>
